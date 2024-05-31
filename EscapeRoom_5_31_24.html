@@ -120,7 +120,11 @@ $timebomb minute(s) passed
 [[Use the hammer.]]</tw-passagedata><tw-passagedata pid="6" name="Disable the bomb." tags="" position="625,625" size="100,100">(if: $timebomb is &gt;= 10)[You ran out of time. &lt;p&gt;Game Over.&lt;/p&gt;]
 (if: $scissors is 0)[You don&#39;t have anything to disable the bomb with.
 (set: $timebomb to $timebomb + 1)
-$timebomb minute(s) passed]
+$timebomb minute(s) passed
+
+[[Try opening the door.]]
+[[Check the vent.]]
+[[Look in the box.]]]
 
 (if: $scissors is 1)[You hold the scissors and find a red wire and a blue wire. You can either take the risk or continue searching.
 &lt;body&gt;
